@@ -5,8 +5,8 @@ export const DATA = {
   name: "Jordan Baumard",
   initials: "JB",
   url: "https://jordanbaumard.fr",
-  location: "Brest, France",
-  locationLink: "https://www.google.com/maps/place/brest",
+  location: "Nantes, France",
+  locationLink: "https://www.google.com/maps/place/nantes",
   description:
     "Software Engineer and student passionate about Computer Science. I love building things and helping people.",
   summary:

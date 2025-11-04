@@ -242,9 +242,15 @@ export const DATA = {
       dates: "June 20th - 22th 2025",
       location: "Cambridge, United Kingdom",
       description:
-        "Organized by University of Cambridge, King's College Cambridge and CodeX (the Stanford Center for Legal Informatics)<br />" +
-        "Sponsored by Google, Jus Mundi, Clifford Chance, and more<br /><br />" +
-        "Coming soon...",
+        "Organized by University of Cambridge, King's College Cambridge and CodeX (the Stanford Center for Legal Informatics).<br />" +
+        "Sponsored by Google, Jus Mundi, Clifford Chance, and more.<br /><br />" +
+        "We tried to answer one big question : how can GenAI transform the practice of law ?<br /><br />" +
+        "With our amazing team Nivar Anwer Alina Ahmed Valentin Colomer and Alexander Plester, we tackled the challenge of building the lawyer's digital mind set by Jus Mundi and CodeX, The Stanford Center for Legal Informatics<br /><br />" +
+        "We created Dialogue AI :<br />" +
+        "↳ A multi-agent AI co-counsel<br />" +
+        "↳ Tests & optimises legal strategies for arbitration<br />" +
+        "↳ Backed by real case law<br /><br />" +
+        "We won the 2nd place overall and a special Google Cloud prize for using their tools to build our solution.",
       image:
         "/university_of_cambridge.png",
       links: [
@@ -261,9 +267,18 @@ export const DATA = {
       dates: "April 4th - 6th 2025",
       location: "Cergy, France",
       description:
-        "Organized by Kryptosphere and Utopia<br />" +
-        "Sponsored by Mistral AI, AWS, Google, Ledger, Bpifrance<br /><br />" +
-        "Coming soon...",
+        "Organized by Kryptosphere and Utopia.<br />" +
+        "Sponsored by Mistral AI, AWS, Google, Ledger, Bpifrance.<br /><br />" +
+        "With our team, we started from a key observation :<br />" +
+        "In 2024, 75% of French people had already been exposed to an attempted scam through Social Engineering (source: cybermalveillance.gouv.fr).<br />" +
+        "Many individuals are still being scammed daily on well-known marketplaces such as eBay, Vinted or Leboncoin.<br /><br />" +
+        "Here comes Trustee :<br />" +
+        "Trustee is an AI agent that detect scams via Social Engineering.<br /><br />" +
+        "Trustee is :<br />" +
+        "↳ a trust score based on multiple criterias : listing, conversation, etc.<br />" +
+        "↳ a conversational assistant that suggests questions to ask to ensure you don't get scammed<br />" +
+        "↳ compatible across all marketplaces (eBay, Vinted, LeBonCoin, etc.)<br /><br />" +
+        "With Trustee, we won the first place overall and also got the top spot in the Cybersecurity special track. It would not have been possible without the invaluable support and guidance of the mentors — thank you !<br /><br />",
       image:
         "/kryptosphere.png",
       links: [

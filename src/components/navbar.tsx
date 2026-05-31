@@ -17,7 +17,7 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const pathname = usePathname();
 
-  if (pathname.startsWith("/coupons")) {
+  if (pathname === "/coupons" || pathname.startsWith("/coupons/")) {
     return null;
   }
 

@@ -78,7 +78,7 @@ export const DATA = {
       location: "Le Mans, France",
       title: "Software Engineer (Work-study program)",
       logoUrl: "/renault_group.jpeg",
-      start: "September 2023",
+      start: "2023",
       end: "Current",
       description:
         "- Developed multiple full-stack web applications for industrial process optimization<br />- Analysis of requirements and proposal of appropriate solutions<br />- Led a key project-management app generating €630k annual savings across Renault’s French plants.<br />- Set up CI/CD pipelines to automate the deployment of our applications.<br />- Operated in agile mode (Scrum).<br /><br />Technical stack :<br />- Frontend : Next.js (TypeScript)<br />- Backend : Symfony (PHP), API Platform<br />- Database : MySQL<br />- Tests : Playwright",
@@ -90,8 +90,8 @@ export const DATA = {
       location: "Leicester, United Kingdom",
       title: "ML Research Intern",
       logoUrl: "/dmu.png",
-      start: "May 2025",
-      end: "August 2025",
+      start: "may 2025",
+      end: "aug 2025",
       description:
         "- Collaborated with university researchers to develop a machine learning model for predicting architectural issues in Python projects.",
     },
@@ -102,8 +102,8 @@ export const DATA = {
       location: "Paris, France",
       title: "Software Engineer (Work-study program)",
       logoUrl: "/ministere_des_armees.jpeg",
-      start: "September 2022",
-      end: "August 2023",
+      start: "2022",
+      end: "2023",
       description:
         "- Developed and maintained a data visualization web application using React.js and Java.<br />- Conceived complex new features to increase the efficiency of the company.<br />- Introduced a gamification module that doubled the number of users in 6 months.<br /><br />Technical stack :<br />- Frontend : React.js (TypeScript)<br />- Backend : Java, Spring<br />- Database : MySQL, ElasticSearch<br />- Microservices architecture",
     },
@@ -114,8 +114,8 @@ export const DATA = {
       location: "Paris, France",
       title: "Chief Technical Officer",
       logoUrl: "/cartesia_junior.jpeg",
-      start: "September 2022",
-      end: "August 2023",
+      start: "2022",
+      end: "2023",
       description:
         "Junior-Enterprise of the Paris Institute of Technology (Paris Cité University)<br/><br />- Management and coordination of a team of 8 people<br />- Participation in decision-making to improve services and performance<br />- Administration of IT infrastructure<br />- Implementation of web infrastructure on AWS (Docker, Nginx)",
     },
@@ -159,8 +159,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video:
-        "/videos/LoupGarouAI.mov",
+      video: "/videos/LoupGarouAI.mp4",
     },
     {
       title: "CountryGuesser",
@@ -186,7 +185,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/videos/CountryGuesser.mov",
+      video: "/videos/CountryGuesser.mp4",
     },
     {
       title: "BLKJCK (minimalist blackjack)",
@@ -211,7 +210,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/videos/Blackjack.mov",
+      video: "/videos/Blackjack.mp4",
     },
     {
       title: "Tennis Computer Analysis",
@@ -232,8 +231,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video:
-        "/videos/TennisComputerAnalysis.avi",
+      video: "/videos/TennisComputerAnalysis.mp4",
     },
   ],
   hackathons: [

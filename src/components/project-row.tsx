@@ -5,8 +5,13 @@ import { VideoLightbox } from "@/components/video-lightbox";
 import { Maximize2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Markdown from "react-markdown";
+
+// iOS exposes a non-standard fullscreen API on the video element itself.
+interface IOSVideoElement extends HTMLVideoElement {
+  webkitEnterFullscreen?: () => void;
+}
 
 const PALETTES = [
   {
@@ -74,11 +79,38 @@ export function ProjectRow({
   const hasMedia = Boolean(video || image);
   const palette = PALETTES[0];
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  const previewRef = useRef<HTMLVideoElement>(null);
+
+  const handleEnlarge = () => {
+    // On touch devices, hand off to the OS-native player instead of the
+    // hover-based custom lightbox (which has no usable controls on mobile).
+    const isTouch =
+      typeof window !== "undefined" &&
+      window.matchMedia("(pointer: coarse)").matches;
+
+    if (isTouch) {
+      const el = previewRef.current as IOSVideoElement | null;
+      if (el) {
+        el.muted = false;
+        if (typeof el.webkitEnterFullscreen === "function") {
+          el.webkitEnterFullscreen();
+          return;
+        }
+        if (typeof el.requestFullscreen === "function") {
+          el.requestFullscreen();
+          return;
+        }
+      }
+    }
+
+    setLightboxOpen(true);
+  };
 
   const mediaInner = (
     <div className="aspect-[16/10] w-full overflow-hidden">
       {video ? (
         <video
+          ref={previewRef}
           src={video}
           autoPlay
           loop
@@ -112,7 +144,7 @@ export function ProjectRow({
         (video ? (
           <button
             type="button"
-            onClick={() => setLightboxOpen(true)}
+            onClick={handleEnlarge}
             aria-label={`Play ${title} video`}
             className="relative block w-full cursor-pointer overflow-hidden bg-muted text-left"
           >

@@ -131,7 +131,7 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <div className="relative left-1/2 right-1/2 -mx-[50vw] w-screen px-6">
+          <div className="px-6">
             <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-6 md:grid-cols-2">
               {DATA.projects.map((project, id) => (
                   <BlurFade

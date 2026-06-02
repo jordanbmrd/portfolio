@@ -238,6 +238,46 @@ export const DATA = {
   ],
   hackathons: [
     {
+      title: "AI for Business w/ AWS x Centrale Nantes Études",
+      dates: "March 21th - 22th, 2026",
+      location: "Le Mans, France",
+      description: "Organized by Centrale Nantes Études.<br />" +
+        "Sponsored by AWS, BNP Paribas, Lovable, Red Bull, Orange Business, ALTEN, Ippon, and more.<br /><br />" +
+        "Today, this is a time-consuming task that requires manually cross-referencing a large amount of data (contracts, financial flows, significant life events, etc.).<br /><br />" +
+        "That's why we worked alongside BNP Paribas to develop an AI tool for bank advisors: an interface that allows them to analyze customer data and obtain concrete recommendations before a meeting.<br /><br />" +
+        "Tech Stack :<br />" +
+        "↳ Frontend : React + Vite<br />" +
+        "↳ Backend : Python + FastAPI<br />" +
+        "↳ AI : Multi-agent architecture (3 specialist agents working in parallel + 1 synthesizer agent)<br />" +
+        "↳ Infrastructure : Full deployment on AWS<br /><br />",
+      image:
+        "/ai_for_business_2026.avif",
+      links: [
+        {
+          title: "Linkedin Post",
+          icon: <Icons.linkedin className="h-4 w-4" />,
+          href: "https://www.linkedin.com/posts/jordanbaumard_winner-hackathon-ai-for-business-amazon-activity-7452238639310401536-Dqi8",
+        },
+      ],
+      position: "first"
+    },
+    {
+      title: "24 hours of code",
+      dates: "March 21th - 22th, 2026",
+      location: "Le Mans, France",
+      description: "Create autonomous AI agents capable of playing and winning 10 different games via a REST API, and accumulating as many points as possible in 24 hours.",
+      image:
+        "/24h_du_code_2026.png",
+      links: [
+        {
+          title: "Linkedin Post",
+          icon: <Icons.linkedin className="h-4 w-4" />,
+          href: "https://www.linkedin.com/posts/ugcPost-7441997203365085184-tm3m",
+        },
+      ],
+      position: "first"
+    },
+    {
       title: "LLM x Law Hackathon",
       dates: "June 20th - 22th 2025",
       location: "Cambridge, United Kingdom",

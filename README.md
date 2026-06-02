@@ -1,43 +1,50 @@
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+# Portfolio
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+Portfolio personnel de Jordan Baumard, construit avec Next.js, shadcn/ui et Magic UI.
 
-# Features
+## Stack technique
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+- Next.js 14 (App Router)
+- React 18 et TypeScript
+- Tailwind CSS
+- shadcn/ui et Magic UI
+- Framer Motion
 
-# Getting Started Locally
+## Démarrage local
 
-1. Clone this repository to your local machine:
+1. Cloner le dépôt :
 
    ```bash
-   git clone https://github.com/jordanbaumard/portfolio
+   git clone https://github.com/jordanbmrd/portfolio
    ```
 
-2. Move to the cloned directory
+2. Se placer dans le dossier :
 
    ```bash
    cd portfolio
    ```
 
-3. Install dependencies:
+3. Installer les dépendances :
 
    ```bash
    pnpm install
    ```
 
-4. Start the local Server:
+4. Lancer le serveur de développement :
 
    ```bash
    pnpm dev
    ```
 
-5. Open the [Config file](./src/data/resume.tsx) and make changes
+5. Modifier le contenu dans [src/data/resume.tsx](./src/data/resume.tsx).
 
-# License
+## Scripts disponibles
 
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+- `pnpm dev` : serveur de développement
+- `pnpm build` : build de production
+- `pnpm start` : démarrage du serveur de production
+- `pnpm lint` : analyse du code
+
+## Licence
+
+Sous licence [MIT](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).

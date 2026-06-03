@@ -112,10 +112,13 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="projects">
-        <div className="space-y-12 w-full py-12">
+      <section
+        id="projects"
+        className="relative left-1/2 right-1/2 -mx-[50vw] w-screen"
+      >
+        <div className="mx-auto max-w-7xl space-y-12 px-6 py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="mx-auto flex max-w-2xl flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                   My Projects
@@ -131,8 +134,8 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <div className="px-6">
-            <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-6 md:grid-cols-2">
+          <div>
+            <div className="mx-auto grid w-full max-w-3xl grid-cols-1 gap-4 sm:grid-cols-2">
               {DATA.projects.map((project, id) => (
                   <BlurFade
                       key={project.title}

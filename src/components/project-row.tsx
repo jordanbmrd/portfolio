@@ -135,7 +135,7 @@ export function ProjectRow({
   return (
     <article
       className={cn(
-        "group flex h-full scroll-mt-6 flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:shadow-lg",
+        "group flex h-full scroll-mt-6 flex-col overflow-hidden rounded-xl border border-border bg-card transition-all duration-300 hover:shadow-lg",
         palette.border
       )}
     >
@@ -174,7 +174,7 @@ export function ProjectRow({
       )}
 
       {/* Content */}
-      <div className="flex w-full flex-1 flex-col p-6 md:p-7">
+      <div className="flex w-full flex-1 flex-col p-3 md:p-4">
         <Link
           href={href || "#"}
           target={href ? "_blank" : undefined}
@@ -182,7 +182,7 @@ export function ProjectRow({
         >
           <h3
             className={cn(
-              "text-2xl font-bold tracking-tight transition-colors duration-300 sm:text-3xl",
+              "text-lg font-bold tracking-tight transition-colors duration-300 sm:text-xl",
               palette.titleHover
             )}
           >
@@ -191,7 +191,7 @@ export function ProjectRow({
           <span
             aria-hidden
             className={cn(
-              "translate-y-0.5 text-xl text-muted-foreground transition-all duration-300 group-hover:translate-x-1",
+              "translate-y-0.5 text-base text-muted-foreground transition-all duration-300 group-hover:translate-x-1",
               palette.titleHover
             )}
           >
@@ -199,17 +199,17 @@ export function ProjectRow({
           </span>
         </Link>
 
-        <Markdown className="prose mt-4 max-w-full text-pretty font-sans text-sm leading-relaxed text-muted-foreground dark:prose-invert">
+        <Markdown className="prose mt-2 max-w-full text-pretty font-sans text-xs leading-relaxed text-muted-foreground dark:prose-invert">
           {description}
         </Markdown>
 
         {tags && tags.length > 0 && (
-          <div className="mt-5 flex flex-wrap gap-2">
+          <div className="mt-3 flex flex-wrap gap-1.5">
             {tags.map((tag) => (
               <span
                 key={tag}
                 className={cn(
-                  "rounded-full px-2.5 py-1 font-mono text-[11px] font-medium uppercase tracking-wider",
+                  "rounded-full px-2 py-0.5 font-mono text-[10px] font-medium uppercase tracking-wider",
                   palette.tag
                 )}
               >
@@ -220,7 +220,7 @@ export function ProjectRow({
         )}
 
         {links && links.length > 0 && (
-          <div className="mt-6 flex flex-row flex-wrap items-center gap-4 pt-1">
+          <div className="mt-4 flex flex-row flex-wrap items-center gap-3 pt-1">
             {links.map((link, idx) => (
               <Link
                 href={link.href}

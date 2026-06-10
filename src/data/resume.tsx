@@ -186,6 +186,27 @@ export const DATA = {
       video: "",
     },
     {
+      title: "OmnyAI",
+      href: "https://jordanbmrd.github.io/lp-omny-ai/",
+      active: true,
+      description:
+        "OmnyAI gave access to all the best AI models on the market, both through a chat interface and via API. Its key advantage was pay-as-you-go pricing (around €10/month for typical usage). It also supported Canvas and image generation models. The project was discontinued in May 2025.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "AI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://jordanbmrd.github.io/lp-omny-ai/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/videos/OmnyAI.mp4",
+    },
+    {
       title: "Tennis Computer Analysis",
       href: "https://github.com/jordanbmrd/tennis-computer-analysis",
       active: true,
@@ -227,32 +248,6 @@ export const DATA = {
       ],
       image: "",
       video: "/videos/LoupGarouAI.mp4",
-    },
-    {
-      title: "CountryGuesser",
-      href: "https://playcountryguesser.netlify.app/",
-      active: true,
-      description:
-        "CountryGuesser is a game in which you have to find the country on the globe based on a randomly displayed flag. There are 3 clues to choose from. The game can be played alone or with friends.",
-      technologies: [
-        "React.js",
-        "Material UI",
-        "Mapbox",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://playcountryguesser.netlify.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/jordanbmrd/CountryGuesser",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "/videos/CountryGuesser.mp4",
     },
   ],
   hackathons: [

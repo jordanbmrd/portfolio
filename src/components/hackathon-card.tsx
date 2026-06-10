@@ -1,5 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { PrizeAnnotation } from "@/components/prize-annotation";
 import Link from "next/link";
 
 interface Props {
@@ -37,17 +38,9 @@ export function HackathonCard({
         {dates && (
           <time className="text-xs text-muted-foreground">{dates}</time>
         )}
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center gap-3">
           <h2 className="font-semibold leading-none">{title}</h2>
-          {
-            position === "first" ? (
-              <h2 className="font-semibold leading-none">🥇 1st prize</h2>
-            ) : position === "second" ? (
-              <h2 className="font-semibold leading-none">🥈 2nd prize</h2>
-            ) : position === "third" ? (
-              <h2 className="font-semibold leading-none">🥉 3rd prize</h2>
-            ) : null
-          }
+          {position && <PrizeAnnotation position={position} />}
         </div>
         {location && (
           <p className="text-sm text-muted-foreground">{location}</p>

@@ -2,6 +2,7 @@ import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectRow } from "@/components/project-row";
+import { SketchAnnotation } from "@/components/sketch-annotation";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -99,14 +100,21 @@ export default function Page() {
         </div>
       </section>
       <section id="skills">
-        <div className="flex min-h-0 flex-col gap-y-3">
+        <div className="flex min-h-0 flex-col gap-y-4">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
-          <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
+          <div className="flex flex-col gap-y-3">
+            {DATA.skills.map((group, groupId) => (
+              <BlurFade key={group.category} delay={BLUR_FADE_DELAY * 10 + groupId * 0.05}>
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-xs font-semibold text-muted-foreground w-24 shrink-0">{group.category}</span>
+                  <div className="flex flex-wrap gap-1">
+                    {group.items.map((skill) => (
+                      <Badge key={skill}>{skill}</Badge>
+                    ))}
+                  </div>
+                </div>
               </BlurFade>
             ))}
           </div>
@@ -134,8 +142,9 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <div>
-            <div className="mx-auto grid w-full max-w-3xl grid-cols-1 gap-4 sm:grid-cols-2">
+          <div className="relative mx-auto w-full max-w-3xl">
+            <SketchAnnotation className="absolute right-full top-20 mr-8 hidden xl:block" />
+            <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2">
               {DATA.projects.map((project, id) => (
                   <BlurFade
                       key={project.title}

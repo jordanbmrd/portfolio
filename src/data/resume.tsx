@@ -13,17 +13,38 @@ export const DATA = {
     "Keen on new technologies and computer programming since I was young, my ambition is to become a Software Engineer. Currently in my third year of the M.Sc. in Engineering program in France, I have created real-world projects, including showcase websites, e-commerce websites or online games, showcasing my ability to create large-scale and impactful projects. Passionate, hardworking, and a strong team player, I am committed to delivering high-quality solutions that make a difference.",
   avatarUrl: "/profile_picture.jpg",
   skills: [
-    "React.js",
-    "Next.js",
-    "TypeScript",
-    "Java",
-    "Symfony",
-    "PHP",
-    "Python",
-    "SQL",
-    "NoSQL",
-    "Docker",
-    "C",
+    {
+      category: "Frontend",
+      items: ["React.js", "Next.js", "TypeScript", "Framer Motion"],
+    },
+    {
+      category: "Mobile",
+      items: ["Swift", "iOS"],
+    },
+    {
+      category: "Backend",
+      items: ["Node.js", "Java", "Spring Boot", "Symfony", "PHP", "FastAPI", "Python", "C"],
+    },
+    {
+      category: "AI / ML",
+      items: ["Machine Learning", "LLMs"],
+    },
+    {
+      category: "Data",
+      items: ["MySQL", "MongoDB", "ElasticSearch"],
+    },
+    {
+      category: "DevOps & Cloud",
+      items: ["Docker", "AWS", "CI/CD", "Git", "Terraform", "Distributed Systems"],
+    },
+    {
+      category: "Design",
+      items: ["Figma"],
+    },
+    {
+      category: "Soft Skills",
+      items: ["Team Spirit", "Problem Solving", "Autonomous", "Self-Starter"],
+    }
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Accueil" },
@@ -140,6 +161,52 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Mon Plein Éco",
+      href: "https://apps.apple.com/fr/app/mon-plein-%C3%A9co-prix-carburant/id6762117420",
+      active: true,
+      description:
+        "Mon Plein Éco is an iOS app to find the cheapest fuel stations around you and along your route. With 400+ users and a 5-star average rating, it helps drivers save money on every fill-up.",
+      technologies: [
+        "iOS",
+        "Swift",
+      ],
+      links: [
+        {
+          type: "App Store",
+          href: "https://apps.apple.com/fr/app/mon-plein-%C3%A9co-prix-carburant/id6762117420",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Website",
+          href: "https://monpleineco.fr",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/monpleineco.png",
+      video: "",
+    },
+    {
+      title: "Tennis Computer Analysis",
+      href: "https://github.com/jordanbmrd/tennis-computer-analysis",
+      active: true,
+      description:
+        "Analyses a tennis game on a video. It detects players and the ball using Yolo and uses CNNs to extract court key points.",
+      technologies: [
+        "Python",
+        "YOLOv5",
+        "Machine Learning"
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/jordanbmrd/tennis-computer-analysis",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/videos/TennisComputerAnalysis.mp4",
+    },
+    {
       title: "Werewolf AI",
       href: "https://github.com/jordanbmrd/24h-du-code-2024",
       active: true,
@@ -186,52 +253,6 @@ export const DATA = {
       ],
       image: "",
       video: "/videos/CountryGuesser.mp4",
-    },
-    {
-      title: "BLKJCK (minimalist blackjack)",
-      href: "https://blkjck.netlify.app",
-      active: true,
-      description:
-        "A minimalist blackjack game offering a clean, straightforward interface focused on the core mechanics. Play against the dealer in a streamlined environment, with simple controls and no distractions. Ideal for quick, casual play while enjoying the classic card game.",
-      technologies: [
-        "React.js",
-        "Deck of Cards API",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://blkjck.netlify.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/jordanbmrd/BlackJack",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "/videos/Blackjack.mp4",
-    },
-    {
-      title: "Tennis Computer Analysis",
-      href: "https://github.com/jordanbmrd/tennis-computer-analysis",
-      active: true,
-      description:
-        "Analyses a tennis game on a video. It detects players and the ball using Yolo and uses CNNs to extract court key points.",
-      technologies: [
-        "Python",
-        "YOLOv5",
-        "Machine Learning"
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/jordanbmrd/tennis-computer-analysis",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "/videos/TennisComputerAnalysis.mp4",
     },
   ],
   hackathons: [

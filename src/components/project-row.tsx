@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { VideoLightbox } from "@/components/video-lightbox";
+import { ImageLightbox } from "@/components/image-lightbox";
 import { Maximize2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -140,37 +141,37 @@ export function ProjectRow({
       )}
     >
       {/* Media — full bleed top of the card */}
-      {hasMedia &&
-        (video ? (
-          <button
-            type="button"
-            onClick={handleEnlarge}
-            aria-label={`Play ${title} video`}
-            className="relative block w-full cursor-pointer overflow-hidden bg-muted text-left"
-          >
-            {mediaInner}
-            {/* Fullscreen affordance */}
-            <span className="pointer-events-none absolute right-3 top-3 flex size-9 items-center justify-center rounded-full bg-black/40 text-white opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:opacity-100">
-              <Maximize2 className="size-4" />
-            </span>
-          </button>
-        ) : (
-          <Link
-            href={href || "#"}
-            target={href ? "_blank" : undefined}
-            className="relative block w-full overflow-hidden bg-muted"
-          >
-            {mediaInner}
-          </Link>
-        ))}
+      {hasMedia && (
+        <button
+          type="button"
+          onClick={handleEnlarge}
+          aria-label={video ? `Play ${title} video` : `Enlarge ${title} image`}
+          className="relative block w-full cursor-pointer overflow-hidden bg-muted text-left"
+        >
+          {mediaInner}
+          {/* Fullscreen affordance */}
+          <span className="pointer-events-none absolute right-3 top-3 flex size-9 items-center justify-center rounded-full bg-black/40 text-white opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:opacity-100">
+            <Maximize2 className="size-4" />
+          </span>
+        </button>
+      )}
 
-      {video && (
+      {video ? (
         <VideoLightbox
           src={video}
           title={title}
           open={lightboxOpen}
           onClose={() => setLightboxOpen(false)}
         />
+      ) : (
+        image && (
+          <ImageLightbox
+            src={image}
+            title={title}
+            open={lightboxOpen}
+            onClose={() => setLightboxOpen(false)}
+          />
+        )
       )}
 
       {/* Content */}

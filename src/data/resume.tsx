@@ -27,11 +27,11 @@ export const DATA = {
     },
     {
       category: "AI / ML",
-      items: ["Machine Learning", "LLMs"],
+      items: ["Machine Learning", "LLMs", "RAG"],
     },
     {
       category: "Data",
-      items: ["MySQL", "MongoDB", "ElasticSearch"],
+      items: ["MySQL", "MongoDB", "ElasticSearch", "Redis"],
     },
     {
       category: "DevOps & Cloud",
@@ -228,26 +228,20 @@ export const DATA = {
       video: "/videos/TennisComputerAnalysis.mp4",
     },
     {
-      title: "Werewolf AI",
-      href: "https://github.com/jordanbmrd/24h-du-code-2024",
+      title: "AI User Data Repository",
+      href: "",
       active: true,
       description:
-        "The Werewolf game adapts the board game for play against an AI powered by Mistral AI. Players can choose from three roles: Villager, Seer, or Werewolf. The AI, accessed via an API on ngrok, provides realistic decisions and chat messages for an immersive experience.",
+        "Built for Devoteam, this platform syncs files from multiple sources (Google Drive, etc.) into a single knowledge base. It is enhanced with AI through automatic tagging and a RAG-powered chatbot, giving Devoteam a unified source of knowledge and boosting productivity.",
       technologies: [
-        "React.js",
-        "Three.js",
+        "Next.js",
+        "TypeScript",
+        "RAG",
         "Python",
-        "Hackathon"
       ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/jordanbmrd/24h-du-code-2024",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
+      links: [],
       image: "",
-      video: "/videos/LoupGarouAI.mp4",
+      video: "/videos/AIUserDataRepository.mp4",
     },
   ],
   hackathons: [

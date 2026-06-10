@@ -3,6 +3,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectRow } from "@/components/project-row";
 import { SketchAnnotation } from "@/components/sketch-annotation";
+import { DevoteamAnnotation } from "@/components/devoteam-annotation";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -144,6 +145,7 @@ export default function Page() {
           </BlurFade>
           <div className="relative mx-auto w-full max-w-3xl">
             <SketchAnnotation className="absolute right-full top-20 mr-8 hidden xl:block" />
+            <DevoteamAnnotation className="absolute left-full top-2/3 ml-8 hidden xl:block" />
             <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2">
               {DATA.projects.map((project, id) => (
                   <BlurFade

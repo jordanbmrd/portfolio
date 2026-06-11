@@ -252,7 +252,6 @@ export const DATA = {
       image:
         "/haks2026.png",
       links: [],
-      position: "first"
     },
     {
       title: "AI for Business w/ AWS x Centrale Nantes Études",

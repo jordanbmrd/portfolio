@@ -1,5 +1,4 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
 import { PrizeAnnotation } from "@/components/prize-annotation";
 import Link from "next/link";
 
@@ -54,13 +53,17 @@ export function HackathonCard({
         )}
       </div>
       {links && links.length > 0 && (
-        <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
+        <div className="mt-2 flex flex-row flex-wrap items-center gap-2">
           {links?.map((link, idx) => (
-            <Link href={link.href} key={idx}>
-              <Badge key={idx} title={link.title} className="flex gap-2">
-                {link.icon}
-                {link.title}
-              </Badge>
+            <Link
+              href={link.href}
+              key={idx}
+              target="_blank"
+              title={link.title}
+              className="inline-flex items-center gap-1.5 rounded-full bg-foreground px-3.5 py-1.5 text-xs font-semibold text-background shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+            >
+              {link.icon}
+              {link.title}
             </Link>
           ))}
         </div>

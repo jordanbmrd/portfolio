@@ -334,7 +334,7 @@ export const DATA = {
         "↳ a trust score based on multiple criterias : listing, conversation, etc.<br />" +
         "↳ a conversational assistant that suggests questions to ask to ensure you don't get scammed<br />" +
         "↳ compatible across all marketplaces (eBay, Vinted, LeBonCoin, etc.)<br /><br />" +
-        "With Trustee, we won the first place overall and also got the top spot in the Cybersecurity special track. It would not have been possible without the invaluable support and guidance of the mentors — thank you !<br /><br />",
+        "With Trustee, we won the first place overall and also got the top spot in the Cybersecurity special track. It would not have been possible without the invaluable support and guidance of the mentors — thank you !<br />",
       image:
         "/kryptosphere.png",
       links: [

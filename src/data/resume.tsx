@@ -242,6 +242,19 @@ export const DATA = {
   ],
   hackathons: [
     {
+      title: "HAKS 2026 - Airbus x IBM x AWS",
+      dates: "June 11th, 2026",
+      location: "Télécom Paris, Palaiseau, France",
+      description: "Organized by HAKS2026 and KRYPTOSPHERE® FRANCE.<br />" +
+        "Sponsored by Airbus, IBM, and AWS.<br /><br />" +
+        "A full-day competition where student teams tackle real aerospace industry challenges.<br /><br />" +
+        "Participants develop solutions using \"Bob\", IBM's AI coding tool, alongside AWS cloud infrastructure, before pitching to a jury panel.",
+      image:
+        "/haks2026.png",
+      links: [],
+      position: "first"
+    },
+    {
       title: "AI for Business w/ AWS x Centrale Nantes Études",
       dates: "March 21th - 22th, 2026",
       location: "Le Mans, France",
@@ -253,7 +266,7 @@ export const DATA = {
         "↳ Frontend : React + Vite<br />" +
         "↳ Backend : Python + FastAPI<br />" +
         "↳ AI : Multi-agent architecture (3 specialist agents working in parallel + 1 synthesizer agent)<br />" +
-        "↳ Infrastructure : Full deployment on AWS<br /><br />",
+        "↳ Infrastructure : Full deployment on AWS<br />",
       image:
         "/ai_for_business_2026.avif",
       links: [

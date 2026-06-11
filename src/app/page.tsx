@@ -108,8 +108,8 @@ export default function Page() {
           <div className="flex flex-col gap-y-3">
             {DATA.skills.map((group, groupId) => (
               <BlurFade key={group.category} delay={BLUR_FADE_DELAY * 10 + groupId * 0.05}>
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-xs font-semibold text-muted-foreground w-24 shrink-0">{group.category}</span>
+                <div className="flex flex-col gap-1.5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-2">
+                  <span className="text-xs font-semibold text-muted-foreground sm:w-24 sm:shrink-0">{group.category}</span>
                   <div className="flex flex-wrap gap-1">
                     {group.items.map((skill) => (
                       <Badge key={skill}>{skill}</Badge>

@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Software Engineer and student passionate about Computer Science. I love building things and helping people.",
   summary:
-    "Keen on new technologies and computer programming since I was young, my ambition is to become a Software Engineer. Currently in my third year of the M.Sc. in Engineering program in France, I have created real-world projects, including showcase websites, e-commerce websites or online games, showcasing my ability to create large-scale and impactful projects. Passionate, hardworking, and a strong team player, I am committed to delivering high-quality solutions that make a difference.",
+    "Keen on new technologies and computer programming since I was young, my ambition is to become a **Software Engineer**. Currently in my **third year of the M.Sc. in Engineering program** in France, I have created **real-world projects**, including showcase websites, e-commerce websites or online games, showcasing my ability to create **large-scale and impactful projects**. **Passionate, hardworking, and a strong team player**, I am committed to delivering **high-quality solutions** that make a difference.",
   avatarUrl: "/profile_picture.jpg",
   skills: [
     {
@@ -18,24 +18,20 @@ export const DATA = {
       items: ["React.js", "Next.js", "TypeScript", "Framer Motion"],
     },
     {
-      category: "Mobile",
-      items: ["Swift", "iOS"],
+      category: "Data",
+      items: ["MySQL", "MongoDB", "ElasticSearch", "Redis"],
     },
     {
       category: "Backend",
       items: ["Node.js", "Java", "Spring Boot", "Symfony", "PHP", "FastAPI", "Python", "C"],
     },
     {
-      category: "AI / ML",
-      items: ["Machine Learning", "LLMs", "RAG"],
-    },
-    {
-      category: "Data",
-      items: ["MySQL", "MongoDB", "ElasticSearch", "Redis"],
-    },
-    {
       category: "DevOps & Cloud",
       items: ["Docker", "AWS", "CI/CD", "Git", "Terraform", "Distributed Systems"],
+    },
+    {
+      category: "AI / ML",
+      items: ["Machine Learning", "LLMs", "RAG"],
     },
     {
       category: "Design",
@@ -47,7 +43,7 @@ export const DATA = {
     }
   ],
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Accueil" },
+    { href: "/", icon: HomeIcon, label: "Home" },
     { href: "https://resume.jordanbaumard.fr", icon: PaperclipIcon, label: "CV" },
   ],
   contact: {

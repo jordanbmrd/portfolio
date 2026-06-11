@@ -7,6 +7,7 @@ import { DevoteamAnnotation } from "@/components/devoteam-annotation";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { SkillIcon } from "@/components/skill-icons";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -47,7 +48,7 @@ export default function Page() {
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert prose-strong:font-semibold prose-strong:text-foreground">
             {DATA.summary}
           </Markdown>
         </BlurFade>
@@ -105,14 +106,21 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
-          <div className="flex flex-col gap-y-3">
+          <div className="grid grid-cols-1 gap-x-10 gap-y-8 sm:grid-cols-2">
             {DATA.skills.map((group, groupId) => (
               <BlurFade key={group.category} delay={BLUR_FADE_DELAY * 10 + groupId * 0.05}>
-                <div className="flex flex-col gap-1.5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-2">
-                  <span className="text-xs font-semibold text-muted-foreground sm:w-24 sm:shrink-0">{group.category}</span>
-                  <div className="flex flex-wrap gap-1">
+                <div className="flex flex-col gap-3">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{group.category}</span>
+                  <div className="flex flex-wrap gap-2">
                     {group.items.map((skill) => (
-                      <Badge key={skill}>{skill}</Badge>
+                      <Badge
+                        key={skill}
+                        variant="outline"
+                        className="gap-1.5 rounded-full px-3 py-1 border-neutral-200 bg-white text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200"
+                      >
+                        <SkillIcon name={skill} className="size-3.5 shrink-0" />
+                        {skill}
+                      </Badge>
                     ))}
                   </div>
                 </div>

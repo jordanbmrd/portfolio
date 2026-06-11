@@ -18,12 +18,12 @@ export const DATA = {
       items: ["React.js", "Next.js", "TypeScript", "Framer Motion"],
     },
     {
-      category: "Data",
-      items: ["MySQL", "MongoDB", "ElasticSearch", "Redis"],
-    },
-    {
       category: "Backend",
       items: ["Node.js", "Java", "Spring Boot", "Symfony", "PHP", "FastAPI", "Python", "C"],
+    },
+    {
+      category: "Data",
+      items: ["MySQL", "MongoDB", "ElasticSearch", "Redis"],
     },
     {
       category: "DevOps & Cloud",

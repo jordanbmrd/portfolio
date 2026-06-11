@@ -56,6 +56,8 @@ export const SKILL_ICONS: Record<string, SkillIconDef> = {
   "Machine Learning": { icon: FaBrain, color: "#FF6F61" },
   LLMs: { icon: SiOpenai, color: "#412991" },
   RAG: { icon: FaCode, color: "#6E56CF" },
+  AI: { icon: FaBrain, color: "#412991" },
+  YOLOv5: { icon: FaBrain, color: "#7B42BC" },
   MySQL: { icon: SiMysql, color: "#4479A1" },
   MongoDB: { icon: SiMongodb, color: "#47A248" },
   ElasticSearch: { icon: SiElasticsearch, color: "#005571" },

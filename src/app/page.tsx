@@ -106,12 +106,20 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-x-10 gap-y-8 sm:grid-cols-2">
+          <div className="flex flex-col gap-y-4">
             {DATA.skills.map((group, groupId) => (
-              <BlurFade key={group.category} delay={BLUR_FADE_DELAY * 10 + groupId * 0.05}>
-                <div className="flex flex-col gap-3">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{group.category}</span>
-                  <div className="flex flex-wrap gap-2">
+              <BlurFade
+                key={group.category}
+                delay={BLUR_FADE_DELAY * 10 + groupId * 0.05}
+                className={
+                  group.category === "Data" || group.category === "Soft Skills"
+                    ? "mt-4"
+                    : undefined
+                }
+              >
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:gap-4">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground sm:w-28 sm:shrink-0 sm:pt-1.5">{group.category}</span>
+                  <div className="flex flex-1 flex-wrap gap-2">
                     {group.items.map((skill) => (
                       <Badge
                         key={skill}

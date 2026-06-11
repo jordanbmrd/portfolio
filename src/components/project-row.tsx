@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { VideoLightbox } from "@/components/video-lightbox";
 import { ImageLightbox } from "@/components/image-lightbox";
 import { Maximize2 } from "lucide-react";
+import { SkillIcon } from "@/components/skill-icons";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
@@ -204,39 +205,38 @@ export function ProjectRow({
           {description}
         </Markdown>
 
-        {tags && tags.length > 0 && (
-          <div className="mt-3 flex flex-wrap gap-1.5">
-            {tags.map((tag) => (
-              <span
-                key={tag}
-                className={cn(
-                  "rounded-full px-2 py-0.5 font-mono text-[10px] font-medium uppercase tracking-wider",
-                  palette.tag
-                )}
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        )}
-
-        {links && links.length > 0 && (
-          <div className="mt-4 flex flex-row flex-wrap items-center gap-3 pt-1">
-            {links.map((link, idx) => (
-              <Link
-                href={link.href}
-                key={idx}
-                target="_blank"
-                className="group/link inline-flex items-center gap-1.5 text-xs font-medium text-foreground/80 transition-colors hover:text-foreground"
-              >
-                {link.icon}
-                <span className="border-b border-transparent transition-colors group-hover/link:border-foreground">
-                  {link.type}
+        {/* Footer — tags + links pinned to the bottom so cards align */}
+        <div className="mt-auto flex flex-col gap-3 pt-4">
+          {tags && tags.length > 0 && (
+            <div className="flex flex-wrap gap-1.5">
+              {tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-semibold text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200"
+                >
+                  <SkillIcon name={tag} className="size-3.5 shrink-0" />
+                  {tag}
                 </span>
-              </Link>
-            ))}
-          </div>
-        )}
+              ))}
+            </div>
+          )}
+
+          {links && links.length > 0 && (
+            <div className="flex flex-row flex-wrap items-center gap-2">
+              {links.map((link, idx) => (
+                <Link
+                  href={link.href}
+                  key={idx}
+                  target="_blank"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-foreground px-3.5 py-1.5 text-xs font-semibold text-background shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  {link.icon}
+                  {link.type}
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </article>
   );

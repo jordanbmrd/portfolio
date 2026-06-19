@@ -74,16 +74,10 @@ export default function CustomCursor() {
   );
 }
 
-/* Arrow cursor — the classic pointer, redrawn cleanly with a soft shadow. */
+/* Arrow cursor — the classic pointer, redrawn cleanly. */
 function ArrowCursor() {
   return (
-    <svg
-      width="30"
-      height="30"
-      viewBox="0 0 24 24"
-      fill="none"
-      style={{ filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.35))" }}
-    >
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path
         d="M5 3L19 12L12 13L9 20L5 3Z"
         className="fill-foreground stroke-background"

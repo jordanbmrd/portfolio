@@ -8,9 +8,9 @@ export const DATA = {
   location: "Nantes, France",
   locationLink: "https://www.google.com/maps/place/nantes",
   description:
-    "Software Engineer and student passionate about Computer Science. I love building things and helping people.",
+    "Software Engineer passionate about Computer Science. I love building things and helping people.",
   summary:
-    "Keen on new technologies and computer programming since I was young, my ambition is to become a **Software Engineer**. Currently in my **third year of the M.Sc. in Engineering program** in France, I have created **real-world projects**, including showcase websites, e-commerce websites or online games, showcasing my ability to create **large-scale and impactful projects**. **Passionate, hardworking, and a strong team player**, I am committed to delivering **high-quality solutions** that make a difference.",
+    "Keen on new technologies and computer programming since I was young, I am now a **Software Engineer** at **360Learning**. A graduate of the **M.Sc. in Engineering program** in France, I have built **real-world projects**, from full-stack web applications to online games, showcasing my ability to create **large-scale and impactful solutions**. **Passionate, hardworking, and a strong team player**, I am committed to delivering **high-quality solutions** that make a difference.",
   avatarUrl: "/profile_picture.jpg",
   skills: [
     {
@@ -89,6 +89,18 @@ export const DATA = {
 
   work: [
     {
+      company: "360Learning",
+      href: "https://360learning.com",
+      badges: [],
+      location: "Paris, France",
+      title: "Software Engineer",
+      logoUrl: "/360learning.png",
+      start: "2026",
+      end: "Current",
+      description:
+        "Full-stack Software Engineer within a product squad building 360Learning's collaborative LMS (2.3M+ registered users).<br /><br />- Develop broader product functionalities on a large-scale, high-traffic codebase with a strong focus on clean architecture.<br />- Take part in a decentralized peer review process, pair programming and knowledge sharing.<br />- Work on cross-functional tooling to maintain quality standards and increase team velocity.<br /><br />Technical stack :<br />- Frontend : Vue.js (TypeScript)<br />- Backend : Node.js (TypeScript)<br />- Database : MongoDB",
+    },
+    {
       company: "Renault Group",
       href: "https://www.renaultgroup.com",
       badges: [],
@@ -96,7 +108,7 @@ export const DATA = {
       title: "Software Engineer (Work-study program)",
       logoUrl: "/renault_group.jpeg",
       start: "2023",
-      end: "Current",
+      end: "2026",
       description:
         "- Developed multiple full-stack web applications for industrial process optimization<br />- Analysis of requirements and proposal of appropriate solutions<br />- Led a key project-management app generating €630k annual savings across Renault’s French plants.<br />- Set up CI/CD pipelines to automate the deployment of our applications.<br />- Operated in agile mode (Scrum).<br /><br />Technical stack :<br />- Frontend : Next.js (TypeScript)<br />- Backend : Symfony (PHP), API Platform<br />- Database : MySQL<br />- Tests : Playwright",
     },

@@ -136,18 +136,6 @@ export const DATA = {
       description:
         "- Developed and maintained a data visualization web application using React.js and Java.<br />- Conceived complex new features to increase the efficiency of the company.<br />- Introduced a gamification module that doubled the number of users in 6 months.<br /><br />Technical stack :<br />- Frontend : React.js (TypeScript)<br />- Backend : Java, Spring<br />- Database : MySQL, ElasticSearch<br />- Microservices architecture",
     },
-    {
-      company: "Cartesia Junior",
-      href: "",
-      badges: [],
-      location: "Paris, France",
-      title: "Chief Technical Officer",
-      logoUrl: "/cartesia_junior.jpeg",
-      start: "2022",
-      end: "2023",
-      description:
-        "Junior-Enterprise of the Paris Institute of Technology (Paris Cité University)<br/><br />- Management and coordination of a team of 8 people<br />- Participation in decision-making to improve services and performance<br />- Administration of IT infrastructure<br />- Implementation of web infrastructure on AWS (Docker, Nginx)",
-    },
   ],
   education: [
     {

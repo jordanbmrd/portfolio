@@ -124,9 +124,12 @@ export default function Page() {
                       <Badge
                         key={skill}
                         variant="outline"
-                        className="gap-1.5 rounded-full px-3 py-1 border-neutral-200 bg-white text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200"
+                        className="group gap-1.5 rounded-full px-3 py-1 border-neutral-200 bg-white text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200"
                       >
-                        <SkillIcon name={skill} className="size-3.5 shrink-0" />
+                        <SkillIcon
+                          name={skill}
+                          className="size-3.5 shrink-0 transition-transform duration-500 ease-in-out group-hover:rotate-[360deg]"
+                        />
                         {skill}
                       </Badge>
                     ))}

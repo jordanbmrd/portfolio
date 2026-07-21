@@ -242,6 +242,36 @@ export const DATA = {
   ],
   hackathons: [
     {
+      title: "The Agentic GTM Hackathon - Anthropic x FullEnrich x Sillage",
+      dates: "July 9th, 2026",
+      location: "Station F, Paris, France",
+      description: "Organized by Anthropic, FullEnrich, and Sillage.<br /><br />" +
+        "A full-day hackathon bringing together builders, sellers, and GTM engineers to answer one question: what does AI-native revenue look like when you actually build it?<br /><br />" +
+        "The goal: build production-ready GTM agents (outreach sequencers, ICP scoring engines, CRM auto-updaters, pipeline risk monitors) surrounded by Anthropic and GTM experts.<br /><br />" +
+        "Tech Stack :<br />" +
+        "↳ Claude (Anthropic) - the AI backbone for reasoning, writing, and agent orchestration<br />" +
+        "↳ Sillage - intent signals: job changes, champion tracking, competitor engagement, hiring intent<br />" +
+        "↳ FullEnrich - contact enrichment: verified emails, phone numbers, people and company data",
+      image:
+        "/agentic_gtm_stationf.png",
+      links: [],
+      position: null,
+    },
+    {
+      title: "Hack_the_Law 2026",
+      dates: "June 26th - 28th, 2026",
+      location: "Cambridge, United Kingdom",
+      description:
+        "Organized by Hack_the_Law Cambridge, in partnership with Stanford CodeX and Cambridge Judge Business School.<br />" +
+        "Sponsored by Clifford Chance, Linklaters, White & Case, and more.<br /><br />" +
+        "A legal-tech hackathon exploring one big question: how can AI transform the practice of law?<br /><br />" +
+        "Over the weekend, dedicated tool workshops, a build sprint, and two rounds of pitching brought together lawyers, technologists, and legal-tech builders to ship real solutions - from citation-integrity checkers to case-theory stress-tests and human-AI supervision platforms.",
+      image:
+        "/university_of_cambridge.png",
+      links: [],
+      position: null,
+    },
+    {
       title: "HAKS 2026 - Airbus x IBM x AWS",
       dates: "June 11th, 2026",
       location: "Télécom Paris, Palaiseau, France",
@@ -408,6 +438,28 @@ export const DATA = {
       position: "first"
     },
     {
+      title: "24 hours of IUT",
+      dates: "May 12th - 13th, 2023",
+      location: "Lyon, France",
+      description:
+        "On the program: Forensic, Pentest, OSINT, Reverse engineering, Steganography, etc. We learned new skills and met some great people !<br /><br />Here are some highlights of our participation with 23 teams present :<br /> - 2nd place in web development<br /> - 3rd place in cybersecurity<br /> - 7th place in algo/prog<br /> - An epic all-nighter",
+      image:
+        "/univ_lyon.png",
+      links: [
+        {
+          title: "Article (Université Paris Cité)",
+          icon: <GraduationCapIcon className="h-4 w-4" />,
+          href: "https://iutparis-seine.u-paris.fr/lequipe-paris-descartes-arrive-3eme-au-challenge-national-des-24h-info-des-iut/",
+        },
+        {
+          title: "Linkedin Post",
+          icon: <Icons.linkedin className="h-4 w-4" />,
+          href: "https://www.linkedin.com/posts/jordanbaumard_24h-des-iut-mai-2023-retour-sur-activity-7063825915960553472-_e7_",
+        },
+      ],
+      position: "second"
+    },
+    {
       title: "Accenture x AWS Deepracer Cup",
       dates: "March 23rd - 24th, 2018",
       location: "Brest, France",
@@ -426,28 +478,6 @@ export const DATA = {
           title: "Linkedin Post",
           icon: <Icons.linkedin className="h-4 w-4" />,
           href: "https://www.linkedin.com/posts/jordanbaumard_awsdeepracer-challengeaccepted-machinelearning-activity-7143601069070192640-Lria",
-        },
-      ],
-      position: "second"
-    },
-    {
-      title: "24 hours of IUT",
-      dates: "May 12th - 13th, 2023",
-      location: "Lyon, France",
-      description:
-        "On the program: Forensic, Pentest, OSINT, Reverse engineering, Steganography, etc. We learned new skills and met some great people !<br /><br />Here are some highlights of our participation with 23 teams present :<br /> - 2nd place in web development<br /> - 3rd place in cybersecurity<br /> - 7th place in algo/prog<br /> - An epic all-nighter",
-      image:
-        "/univ_lyon.png",
-      links: [
-        {
-          title: "Article (Université Paris Cité)",
-          icon: <GraduationCapIcon className="h-4 w-4" />,
-          href: "https://iutparis-seine.u-paris.fr/lequipe-paris-descartes-arrive-3eme-au-challenge-national-des-24h-info-des-iut/",
-        },
-        {
-          title: "Linkedin Post",
-          icon: <Icons.linkedin className="h-4 w-4" />,
-          href: "https://www.linkedin.com/posts/jordanbaumard_24h-des-iut-mai-2023-retour-sur-activity-7063825915960553472-_e7_",
         },
       ],
       position: "second"

@@ -61,7 +61,7 @@ export default function CustomCursor() {
   return (
     <motion.div
       aria-hidden
-      className="pointer-events-none fixed left-0 top-0 z-[9999] hidden md:block"
+      className="pointer-events-none fixed left-0 top-0 z-[9999]"
       style={{ x, y }}
       animate={{
         opacity: hidden ? 0 : 1,
